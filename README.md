@@ -1,0 +1,1 @@
+Vertica Frontend Template Scaffolding
