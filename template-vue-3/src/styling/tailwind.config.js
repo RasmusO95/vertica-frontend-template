@@ -37,5 +37,5 @@ module.exports = {
         margin: ['responsive', 'first', 'last'],
         padding: ['responsive', 'first', 'last'],
     },
-    plugins: require('./plugins'),
+    plugins: [],
 };

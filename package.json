@@ -1,8 +1,9 @@
 {
-  "name": "@vertica/basic-frontend-template",
+  "name": "create-basic-frontend-template-test",
   "version": "1.0.0",
   "license": "MIT",
-  "author": "RAO",
+  "author": "vincentvanclef",
+  "private": false,
   "bin": {
     "create-app": "index.js",
     "cva": "index.js"
@@ -23,9 +24,6 @@
     "type": "git",
     "url": "git+https://github.com/RasmusO95/vertica-frontend-template.git",
     "directory": "vertica/basic-frontend-template"
-  },
-  "bugs": {
-    "url": "https://github.com/vitejs/vite/issues"
   },
   "homepage": "https://vertica.dk",
   "dependencies": {

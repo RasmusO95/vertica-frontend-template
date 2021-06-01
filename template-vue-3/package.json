@@ -28,6 +28,7 @@
     "eslint-plugin-standard": "^5.0.0",
     "eslint-plugin-vue": "^7.9.0",
     "less": "^4.1.1",
+    "less-loader": "^9.0.0",
     "postcss": "^8.3.0",
     "postcss-import": "^14.0.2",
     "postcss-nesting": "^8.0.1",
