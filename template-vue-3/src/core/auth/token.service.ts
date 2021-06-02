@@ -3,13 +3,8 @@ import { localStorageService } from '@/core/storage/storage.service';
 const LOCAL_STORAGE_KEY = 'auth-token';
 const LOCAL_STORAGE_KEY_FOR_PREVIOUS = 'auth-token-previous';
 
-export interface UserData {
-    name: string;
-    email: string;
-}
-
 class TokenService {
-    public parseJwt(token: string | null): UserData | null {
+    public parseJwt<T>(token: string | null): T | null {
         if (!token) return null;
 
         try {
@@ -26,7 +21,7 @@ class TokenService {
                 const pascalCasedKey = key.charAt(0).toLowerCase() + key.slice(1);
                 userData[pascalCasedKey] = parsedToken[key];
             });
-            return userData as UserData;
+            return userData as T;
         } catch {
             this.removeToken(true);
             return null;

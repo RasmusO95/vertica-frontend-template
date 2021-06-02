@@ -1,5 +1,10 @@
 import { reactive } from 'vue';
-import tokenService, { UserData } from './token.service';
+import tokenService from './token.service';
+
+export interface UserData {
+    name: string;
+    email: string;
+}
 
 class AuthService {
     private state: {
@@ -16,7 +21,7 @@ class AuthService {
 
     public logIn(token: string) {
         this.state.token = token;
-        this.state.userData = tokenService.parseJwt(token);
+        this.state.userData = tokenService.parseJwt<UserData>(token);
         tokenService.setToken(token);
     }
 
