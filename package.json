@@ -1,31 +1,17 @@
 {
   "name": "create-basic-frontend-template-test",
-  "version": "1.0.0",
-  "license": "MIT",
-  "author": "vincentvanclef",
+  "version": "1.0.1",
   "private": false,
-  "bin": {
-    "create-app": "index.js",
-    "cva": "index.js"
-  },
-  "files": [
-    "index.js",
-    "template-*"
-  ],
-  "main": "index.js",
+  "author": "vincentvanclef",
   "scripts": {
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s --commit-path . --lerna-package create-app",
     "release": "node updateVersions && node ../../scripts/release.js --skipBuild"
   },
-  "engines": {
-    "node": ">=12.0.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/RasmusO95/vertica-frontend-template.git",
-    "directory": "vertica/basic-frontend-template"
-  },
-  "homepage": "https://vertica.dk",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "template-*"
+  ],
   "dependencies": {
     "kolorist": "^1.2.9",
     "minimist": "^1.2.5",
@@ -33,5 +19,19 @@
   },
   "devDependencies": {
     "@types/node": "^15.6.1"
+  },
+  "bin": {
+    "create-app": "index.js",
+    "cva": "index.js"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "homepage": "https://vertica.dk",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RasmusO95/vertica-frontend-template.git",
+    "directory": "vertica/basic-frontend-template"
   }
 }
