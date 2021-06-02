@@ -20,9 +20,9 @@ export default defineConfig({
         },
     },
     resolve: {
-        alias: {
-            '@': pathResolve('./src'),
-            '~': pathResolve('./node_modules'),
-        },
+        alias: [
+            { find: '@', replacement: pathResolve('/src') },
+            { find: '~', replacement: pathResolve('/node_modules') },
+        ],
     },
 });

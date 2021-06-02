@@ -1,10 +1,11 @@
 <template>
-    <router-view/>
-    <div class="test">
-        <p>
-            Vertica Frontend Template
-        </p>
-    </div>
+    <router-view v-slot="{ Component }">
+        <transition appear mode="out-in"
+                    enter-active-class="animate__animated animate__fadeIn u-anim-dur-250"
+                    leave-active-class="animate__animated animate__fadeOut u-anim-dur-150">
+            <component :is="Component"/>
+        </transition>
+    </router-view>
 </template>
 
 <script lang="ts">
@@ -16,21 +17,3 @@ export default defineComponent({
     },
 });
 </script>
-
-<style lang="less" scoped>
-.test {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    p {
-        font-size: 4rem;
-    }
-}
-</style>

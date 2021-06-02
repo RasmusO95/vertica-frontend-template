@@ -58,6 +58,7 @@ module.exports = {
         'vue/no-v-html': 'off',
         '@typescript-eslint/no-unused-vars': [2, { args: 'none' }],
         '@typescript-eslint/no-explicit-any': 'off',
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
         '@typescript-eslint/no-use-before-define': 'off',
     },
     parserOptions: {

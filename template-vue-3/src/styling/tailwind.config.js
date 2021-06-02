@@ -1,6 +1,6 @@
 module.exports = {
     purge: { content: ['./src/**/*.vue'] },
-    darkMode: false, // or 'media' or 'class'
+    screens: require('./screens'),
     theme: {
         backgroundColor: theme => theme('colors'),
         borderColor: theme => theme('colors'),

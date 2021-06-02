@@ -4,11 +4,24 @@
     "module": "esnext",
     "moduleResolution": "node",
     "strict": true,
+    "noImplicitAny": false,
     "jsx": "preserve",
     "sourceMap": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "lib": ["esnext", "dom"]
+    "plugins": [{ "name": "@vuedx/typescript-plugin-vue" }],
+    "lib": ["esnext", "dom"],
+    "types": ["vite/client", "webpack-env"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+    }
   },
+  "typeRoots": [
+    "./node_modules/@types",
+    "./src/types"
+  ],
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
 }
