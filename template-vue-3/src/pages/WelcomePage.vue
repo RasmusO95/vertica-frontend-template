@@ -44,6 +44,8 @@
 <script lang="ts">
 import authService from '@/core/auth/auth.service';
 import { defineComponent } from 'vue';
+import bus from '@/core/bus';
+import { ClientMessage, ClientMessageType, ClientMessageWithError, GeneralErrorEventKey } from '@/core/messages/types';
 
 export default defineComponent({
     name: 'WelcomePage',
@@ -62,6 +64,14 @@ export default defineComponent({
         logout() {
             authService.logOut();
         },
+    },
+    mounted() {
+        const messages: ClientMessage[] = [{
+            message: 'Welcome - To a Vertica Frontend Vue3 Template',
+            messageType: ClientMessageType.Info,
+            errorId: '',
+        }];
+        bus.emit(GeneralErrorEventKey, { messages, errorId: '' } as ClientMessageWithError);
     },
 });
 </script>
