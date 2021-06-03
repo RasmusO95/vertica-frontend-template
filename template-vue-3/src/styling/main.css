@@ -1,11 +1,35 @@
+@import "3rd-party.css";
+
+/**
+ * This injects Tailwind's base styles, which is a combination of
+ * Normalize.css and some additional base styles.
+ *
+ * You can see the styles here:
+ * https://github.com/tailwindcss/tailwindcss/blob/master/css/preflight.css
+ */
 @import 'tailwindcss/base';
 
 @import '1-tools';
 @import '3-elements';
 @import '4-objects';
+
+/**
+ * This injects any component classes registered by plugins.
+ */
+@import 'tailwindcss/components';
+
+/**
+ * ITCSS Components goes here
+ */
 @import '5-components';
 
-@import 'tailwindcss/components';
+/**
+ * This injects all of Tailwind's utility classes, generated based on your
+ * config file.
+ */
 @import 'tailwindcss/utilities';
 
-
+/**
+ * ITCSS Utilities goes here
+ */
+ @import '6-utilities/index';

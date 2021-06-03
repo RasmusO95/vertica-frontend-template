@@ -30,6 +30,10 @@ class DictionaryService {
         return this.format(translated, args);
     }
 
+    public exists(key: string): boolean {
+        return !!this.dictionaryMap.get(key);
+    }
+
     public format(input: string, args: string[] = []): string {
         return args.reduce((result, arg, ix) => {
             return result.split(`{${ix}}`).join(arg);

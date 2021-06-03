@@ -28,11 +28,11 @@
             <li>Http Client Wrapper (axios)</li>
             <li>Http Interceptors (version, redirect, error)</li>
             <li>Http cancellation</li>
+            <li>Notifications</li>
             <li>Tailwind</li>
             <li>Dictionary (translations)</li>
             <li>Responsiveness (image, breakpoints etc)</li>
-            <li>SVG icons <c-icon name="login"/>
-            </li>
+            <li>SVG icons <c-icon name="login"/></li>
             <li>Form utils (vee-validate)</li>
             <li>Basic directives</li>
             <li>Logging</li>
