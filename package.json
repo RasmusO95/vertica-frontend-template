@@ -1,16 +1,17 @@
 {
-  "name": "create-basic-frontend-template-test",
-  "version": "1.0.1",
+  "name": "@vertica/create-basic-frontend-template",
+  "version": "1.0.0",
   "private": false,
-  "author": "vincentvanclef",
-  "scripts": {
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s --commit-path . --lerna-package create-app",
-    "release": "node updateVersions && node ../../scripts/release.js --skipBuild"
-  },
+  "author": "RAO",
   "main": "index.js",
   "files": [
     "index.js",
     "template-*"
+  ],
+  "contributors": [
+    {
+      "name": "Carsten Hess (che)"
+    }
   ],
   "dependencies": {
     "kolorist": "^1.2.9",

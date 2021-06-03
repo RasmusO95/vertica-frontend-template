@@ -1,5 +1,13 @@
 {
-  "version": "0.0.0",
+  "name": "@vertica/basic-frontend-template",
+  "version": "1.0.1",
+  "private": false,
+  "author": "RAO",
+  "contributors": [
+    {
+      "name": "Carsten Hess (che)"
+    }
+  ],
   "scripts": {
     "serve": "vite preview",
     "build": "vue-tsc --noEmit && vite build",
@@ -28,7 +36,7 @@
     "@typescript-eslint/eslint-plugin": "^4.25.0",
     "@typescript-eslint/parser": "^4.25.0",
     "@vitejs/plugin-vue": "^1.2.3",
-    "@vue/compiler-sfc": "^3.0.5",
+    "@vue/compiler-sfc": "^3.0.11",
     "@vue/eslint-config-standard": "^6.0.0",
     "@vue/eslint-config-typescript": "^7.0.0",
     "@yzfe/svgicon-loader": "^1.0.5",
@@ -40,8 +48,6 @@
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-standard": "^5.0.0",
     "eslint-plugin-vue": "^7.9.0",
-    "less": "^4.1.1",
-    "less-loader": "^9.0.0",
     "postcss": "^8.3.0",
     "postcss-import": "^14.0.2",
     "postcss-nesting": "^8.0.1",

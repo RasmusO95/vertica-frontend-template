@@ -66,7 +66,7 @@ export default defineComponent({
 });
 </script>
 
-<style lang="less" scoped>
+<style scoped>
     .welcome-page {
         height: 100vh;
         @apply flex flex-col justify-center items-center;
