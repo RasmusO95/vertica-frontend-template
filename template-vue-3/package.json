@@ -1,5 +1,5 @@
 {
-  "name": "@vertica/basic-frontend-template",
+  "name": "vertica-basic-frontend-template",
   "version": "1.0.1",
   "private": false,
   "author": "RAO",
@@ -27,7 +27,7 @@
     "querystring": "^0.2.1",
     "tiny-emitter": "^2.1.0",
     "vee-validate": "^4.4.1",
-    "vue": "^3.0.5",
+    "vue": "^3.0.11",
     "vue-router": "^4.0.8"
   },
   "devDependencies": {
@@ -54,7 +54,7 @@
     "postcss-nesting": "^8.0.1",
     "tailwindcss": "^2.1.2",
     "typescript": "^4.1.3",
-    "vite": "^2.3.5",
+    "vite": "^2.3.6",
     "vue-tsc": "^0.0.24",
     "yup": "^0.32.9"
   }
