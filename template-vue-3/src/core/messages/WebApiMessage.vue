@@ -1,8 +1,8 @@
 <template>
-    <div v-if="messages.length > 0">
-        <slot :messages="messages">
+    <div v-if="data.messages.length > 0">
+        <slot :messages="data.messages">
             <ul class="text-red-500 text-12 font-medium list-reset">
-                <li v-for="(message, ix) in messages" :key="ix" class="mt-15">
+                <li v-for="(message, ix) in data.messages" :key="ix" class="mt-15">
                     {{ getMessage(message.message) }}
                     <template v-if="errorId">
                         [ {{ errorId }}]
@@ -17,7 +17,7 @@
 import { defineComponent, onBeforeUnmount, reactive, ref } from 'vue';
 import bus from '@/core/bus';
 import { ClientMessage, ValidationErrorEvent, ValidationErrorEventKey } from '@/core/messages/types';
-import dictionaryService from '@/core/translation/dictionary.service';
+import dictionaryService from '@/core/dictionary/dictionary.service';
 
 export default defineComponent({
     name: 'WebApiMessage',

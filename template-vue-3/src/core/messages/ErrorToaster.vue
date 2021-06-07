@@ -3,7 +3,7 @@
                 enter-active-class="animate__animated animate__fadeIn u-anim-dur-500"
                 leave-active-class="animate__animated animate__fadeOut u-anim-dur-500">
         <article v-if="data.messages.length" class="fixed top-0 w-full asdfasdf z-errorToaster animate__animated animate__fadeIn">
-            <div v-for="message in data.messages" :key="message.id"
+            <div v-for="message in data.messages" :key="message.errorId"
                  class="text-white p-30 font-medium text-16 flex w-full items-center justify-between border border-white"
                  :class="getBgColor(message.messageType)">
                 <p>
